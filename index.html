@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>senbon | GitHub Pages サイト</title>
+  <meta name="description" content="GitHub Pages のテスト用サイトです。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>senbon</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>GitHub Pages へようこそ</h2>
+        <p>このページは GitHub Desktop から公開できる、最小構成のホームページです。</p>
+        <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub を開く</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h3>About</h3>
+        <p>このリポジトリのテンプレートは、<code>index.html</code> と <code>styles.css</code> だけで構成されたシンプルな静的サイトです。画像や追加ページ（例: <code>about.html</code>）を増やしてもOKです。</p>
+      </div>
+    </section>
+
+    <section id="features" class="section alt">
+      <div class="container grid">
+        <div>
+          <h4>簡単</h4>
+          <p>ファイルをコミットして GitHub Pages を有効化するだけ。</p>
+        </div>
+        <div>
+          <h4>高速</h4>
+          <p>CDN から配信され、ページ表示が高速です。</p>
+        </div>
+        <div>
+          <h4>無料</h4>
+          <p>個人利用なら無料で使えます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>このテンプレートは自由に改変して使ってください。質問があればリポジトリの Issues にどうぞ。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> senbon. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
